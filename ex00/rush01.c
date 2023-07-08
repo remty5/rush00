@@ -6,7 +6,7 @@
 /*   By: gkubina <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 09:53:33 by gkubina           #+#    #+#             */
-/*   Updated: 2023/07/08 13:16:05 by event            ###   ########.fr       */
+/*   Updated: 2023/07/08 17:01:09 by itoudji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	rush(int x, int y)
 	int	line;
 
 	line = 0;
-	while (line < y && (x * y != 0))
+	while (line < y && x > 0 && y > 0)
 	{
 		if (line == 0)
 			ft_printline(x, '/', '*', '\\');
