@@ -6,11 +6,11 @@
 /*   By: gkubina <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 09:53:33 by gkubina           #+#    #+#             */
-/*   Updated: 2023/07/08 11:59:09 by gkubina          ###   ########.fr       */
+/*   Updated: 2023/07/08 13:31:40 by event            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int wide, int height);
+void	rush(int x, int y);
 
 int	main(void)
 {

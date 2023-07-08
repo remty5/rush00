@@ -6,7 +6,7 @@
 /*   By: gkubina <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 09:53:33 by gkubina           #+#    #+#             */
-/*   Updated: 2023/07/08 11:59:26 by gkubina          ###   ########.fr       */
+/*   Updated: 2023/07/08 13:16:05 by event            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,24 +27,22 @@ void	ft_printline(int length, char first, char middle, char last)
 			ft_putchar(last);
 		length_counter++;
 	}
-	ft_putchar(10);
+	ft_putchar('\n');
 }
 
-void	rush(int wide, int height)
+void	rush(int x, int y)
 {
-	int	wide_counter;
-	int	height_counter;
+	int	line;
 
-	wide_counter = 0;
-	height_counter = 0;
-	while (height_counter < height && (wide * height != 0))
+	line = 0;
+	while (line < y && (x * y != 0))
 	{
-		if (height_counter == 0)
-			ft_printline(wide, '/', '*', 92);
-		if (height_counter < height - 1 && height_counter != 0)
-			ft_printline(wide, '*', ' ', '*');
-		if (height_counter == height - 1 && height > 1)
-			ft_printline(wide, 92, '*', '/');
-		height_counter++;
+		if (line == 0)
+			ft_printline(x, '/', '*', '\\');
+		if (0 < line && line < y - 1)
+			ft_printline(x, '*', ' ', '*');
+		if (line == y - 1 && y > 1)
+			ft_printline(x, '\\', '*', '/');
+		line++;
 	}
 }
